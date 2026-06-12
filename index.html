@@ -5,6 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Zeigler Honda — At Home Delivery | We Bring the Dealership to You</title>
   <meta name="description" content="Shop, buy, sign and take delivery of your new Honda without leaving home. Zeigler Honda of Racine delivers to Southern Wisconsin and Northern Illinois.">
+  <meta name="theme-color" content="#002657">
+  <link rel="icon" href="zieglerlogo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="zieglerlogo.svg">
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Zeigler Honda — We Bring the Dealership to You">
+  <meta property="og:description" content="Shop, buy, sign and take delivery of your new Honda without leaving home. Free home delivery within 50 miles of Sturtevant, WI.">
+  <meta property="og:image" content="hondafront.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Zeigler Honda — We Bring the Dealership to You">
+  <meta name="twitter:description" content="Shop, buy, sign and take delivery of your new Honda without leaving home.">
+  <meta name="twitter:image" content="hondafront.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
@@ -135,27 +147,27 @@
     <h2 class="section-title">BROWSE OUR POPULAR HONDA MODELS</h2>
     <div class="models__row">
       <article class="model">
-        <div class="model__img" style="background-image:url('crv_t.png')"></div>
+        <div class="model__img" style="background-image:url('crv_t.webp')"></div>
         <h3>CR-V</h3>
         <a href="https://www.zeiglerhondaracine.com/new-inventory/index.htm?search=&gvModel=CR-V" class="btn btn--outline btn--sm">SHOP NOW</a>
       </article>
       <article class="model">
-        <div class="model__img" style="background-image:url('pilot_t.png')"></div>
+        <div class="model__img" style="background-image:url('pilot_t.webp')"></div>
         <h3>PILOT</h3>
         <a href="https://www.zeiglerhondaracine.com/new-inventory/index.htm?search=&gvModel=Pilot" class="btn btn--outline btn--sm">SHOP NOW</a>
       </article>
       <article class="model">
-        <div class="model__img" style="background-image:url('accord_t.png')"></div>
+        <div class="model__img" style="background-image:url('accord_t.webp')"></div>
         <h3>ACCORD</h3>
         <a href="https://www.zeiglerhondaracine.com/new-inventory/index.htm?search=&gvModel=Accord" class="btn btn--outline btn--sm">SHOP NOW</a>
       </article>
       <article class="model">
-        <div class="model__img" style="background-image:url('civic_t.png')"></div>
+        <div class="model__img" style="background-image:url('civic_t.webp')"></div>
         <h3>CIVIC</h3>
         <a href="https://www.zeiglerhondaracine.com/new-inventory/index.htm?search=&gvModel=Civic" class="btn btn--outline btn--sm">SHOP NOW</a>
       </article>
       <article class="model">
-        <div class="model__img" style="background-image:url('hr-v_t.png')"></div>
+        <div class="model__img" style="background-image:url('hr-v_t.webp')"></div>
         <h3>HR-V</h3>
         <a href="https://www.zeiglerhondaracine.com/new-inventory/index.htm?search=&gvModel=HR-V" class="btn btn--outline btn--sm">SHOP NOW</a>
       </article>
@@ -248,29 +260,38 @@
     </div>
     <div class="cta__form">
       <h3>SCHEDULE YOUR HOME DELIVERY</h3>
-      <form>
+      <!-- NOTE FOR DEV: wire up form action/method to the dealership lead handler (CRM/ADF). Currently inert. -->
+      <form action="#" method="post" novalidate>
         <div class="row">
-          <input type="text" placeholder="First Name*" required>
-          <input type="text" placeholder="Last Name*" required>
+          <label class="sr-only" for="firstName">First Name</label>
+          <input id="firstName" name="firstName" type="text" placeholder="First Name*" autocomplete="given-name" required>
+          <label class="sr-only" for="lastName">Last Name</label>
+          <input id="lastName" name="lastName" type="text" placeholder="Last Name*" autocomplete="family-name" required>
         </div>
         <div class="row">
-          <input type="email" placeholder="Email*" required>
-          <input type="tel" placeholder="Phone*" required>
+          <label class="sr-only" for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="Email*" autocomplete="email" required>
+          <label class="sr-only" for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" placeholder="Phone*" autocomplete="tel" required>
         </div>
         <div class="row">
-          <input type="text" placeholder="ZIP Code*" required>
-          <select>
+          <label class="sr-only" for="zip">ZIP Code</label>
+          <input id="zip" name="zip" type="text" inputmode="numeric" placeholder="ZIP Code*" autocomplete="postal-code" required>
+          <label class="sr-only" for="vehicle">Vehicle of Interest</label>
+          <select id="vehicle" name="vehicle">
             <option value="" disabled selected>Vehicle of Interest</option>
             <option>CR-V</option><option>Pilot</option><option>Accord</option>
             <option>Civic</option><option>HR-V</option><option>Other</option>
           </select>
         </div>
         <div class="row">
-          <select>
+          <label class="sr-only" for="location">Preferred Delivery Location</label>
+          <select id="location" name="deliveryLocation">
             <option value="" disabled selected>Preferred Delivery Location</option>
             <option>Home</option><option>Office</option><option>Other</option>
           </select>
-          <input type="text" placeholder="Comments">
+          <label class="sr-only" for="comments">Comments</label>
+          <input id="comments" name="comments" type="text" placeholder="Comments">
         </div>
         <button type="submit" class="btn btn--blue btn--block">SCHEDULE MY HOME DELIVERY</button>
       </form>
@@ -290,10 +311,12 @@
       // Zeigler Honda — Sturtevant, WI 53177
       var center = [42.7008, -87.8987];
       var radiusMeters = 50 * 1609.34; // 50 miles
-      var map = L.map(el, { scrollWheelZoom: false, zoomControl: false, attributionControl: false, dragging: true })
+      var map = L.map(el, { scrollWheelZoom: false, zoomControl: false, attributionControl: true, dragging: true })
         .setView(center, 9);
+      map.attributionControl.setPrefix('');
       L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
-        maxZoom: 18, subdomains: 'abcd'
+        maxZoom: 18, subdomains: 'abcd',
+        attribution: '&copy; OpenStreetMap, &copy; CARTO'
       }).addTo(map);
       var circle = L.circle(center, {
         radius: radiusMeters,
