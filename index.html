@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zeigler Honda — At Home Delivery | We Bring the Dealership to You</title>
+  <meta name="description" content="Shop, buy, sign and take delivery of your new Honda without leaving home. Zeigler Honda of Racine delivers to Southern Wisconsin and Northern Illinois.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== TOP BAR ===== -->
+  <header class="topbar">
+    <div class="topbar__logo">
+      <img class="logo-img" src="zieglerlogo.svg" alt="Zeigler Honda Experience">
+    </div>
+    <ul class="topbar__items">
+      <li>
+        <span class="chk" aria-hidden="true">✓</span>
+        <span><strong>CONVENIENT.</strong>WE COME TO YOU.</span>
+      </li>
+      <li>
+        <span class="chk" aria-hidden="true">✓</span>
+        <span><strong>EASY.</strong>E-SIGN &amp; DRIVE.</span>
+      </li>
+      <li>
+        <span class="chk" aria-hidden="true">✓</span>
+        <span><strong>STRESS-FREE.</strong>YOUR TIME, YOUR WAY.</span>
+      </li>
+    </ul>
+    <a href="tel:2622609760" class="topbar__phone"><span>Call Now!</span> <strong>262-260-9760</strong></a>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero__copy">
+      <h1>
+        <span class="h-line1">WE BRING THE</span>
+        <span class="h-line2">DEALERSHIP</span>
+        <span class="h-script">To You!</span>
+      </h1>
+      <p class="hero__lede">Shop, Buy, Sign and Take Delivery of<br>Your New Honda Without Leaving Home.</p>
+
+      <ul class="hero__badges">
+        <li>
+          <span class="hb-ico"><img src="delivery.svg" alt=""></span>
+          <strong>DELIVERED TO</strong>
+          <em>YOUR HOME.</em>
+          <small>WITHIN 50-MILE RADIUS.</small>
+        </li>
+        <li>
+          <span class="hb-ico"><img src="sign.svg" alt=""></span>
+          <strong>E-SIGN</strong>
+          <em>EVERYTHING.</em>
+          <small>FROM THE COMFORT OF YOUR HOME.</small>
+        </li>
+        <li>
+          <span class="hb-ico"><img src="key.svg" alt=""></span>
+          <strong>WE HANDLE</strong>
+          <em>THE REST.</em>
+          <small>YOU RELAX, WE MAKE IT EASY.</small>
+        </li>
+      </ul>
+
+      <div class="hero__cta">
+        <a href="https://www.zeiglerhondaracine.com/new-inventory/index.htm" class="btn btn--blue">SHOP INVENTORY</a>
+        <a href="https://www.zeiglerhondaracine.com/financing/application.htm" class="btn btn--outline">GET PRE-APPROVED</a>
+      </div>
+    </div>
+    <div class="hero__photo" role="img" aria-label="Couple reviewing paperwork to buy a Honda from home"></div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="steps">
+    <h2 class="section-title">HOW HONDA HOME DELIVERY WORKS</h2>
+    <ol class="steps__row">
+      <li class="step">
+        <span class="step__num">1</span>
+        <span class="step__ico"><img src="choose.svg" alt=""></span>
+        <h3>CHOOSE YOUR VEHICLE</h3>
+        <p>Browse our full inventory online and pick the Honda that's right for you.</p>
+      </li>
+      <li class="chevron">›</li>
+      <li class="step">
+        <span class="step__num">2</span>
+        <span class="step__ico"><img src="trade.svg" alt=""></span>
+        <h3>GET YOUR TRADE VALUE</h3>
+        <p>Receive a competitive offer for your trade in minutes.</p>
+      </li>
+      <li class="chevron">›</li>
+      <li class="step">
+        <span class="step__num">3</span>
+        <span class="step__ico"><img src="financing.svg" alt=""></span>
+        <h3>SECURE FINANCING</h3>
+        <p>Apply online and get pre-approved with competitive rates.</p>
+      </li>
+      <li class="chevron">›</li>
+      <li class="step">
+        <span class="step__num">4</span>
+        <span class="step__ico"><img src="essigndoc.svg" alt=""></span>
+        <h3>E-SIGN DOCUMENTS</h3>
+        <p>Review and e-sign your documents securely from home.</p>
+      </li>
+      <li class="chevron">›</li>
+      <li class="step">
+        <span class="step__num">5</span>
+        <span class="step__ico"><img src="deliver_home.svg" alt=""></span>
+        <h3>WE DELIVER YOUR HONDA</h3>
+        <p>We'll deliver your vehicle to your home or office.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ===== DELIVERED TO YOUR DRIVEWAY ===== -->
+  <section class="driveway">
+    <div class="driveway__panel">
+      <h2><span>DELIVERED TO</span><span class="blue">YOUR DRIVEWAY.</span></h2>
+      <p>Our team will deliver your new Honda directly to your home or office. We'll walk you through the vehicle and make sure everything is perfect before we leave.</p>
+      <ul class="checklist">
+        <li>Contactless Delivery Available</li>
+        <li>Full Vehicle Walkthrough</li>
+        <li>Flexible Delivery Scheduling</li>
+        <li>Up to 50 Miles From Our Dealership</li>
+      </ul>
+      <a href="#schedule" class="btn btn--blue">LEARN MORE</a>
+    </div>
+  </section>
+
+  <!-- ===== POPULAR MODELS ===== -->
+  <section class="models" id="inventory">
+    <h2 class="section-title">BROWSE OUR POPULAR HONDA MODELS</h2>
+    <div class="models__row">
+      <article class="model">
+        <div class="model__img" style="background-image:url('crv_t.png')"></div>
+        <h3>CR-V</h3>
+        <a href="https://www.zeiglerhondaracine.com/new-inventory/index.htm?search=&gvModel=CR-V" class="btn btn--outline btn--sm">SHOP NOW</a>
+      </article>
+      <article class="model">
+        <div class="model__img" style="background-image:url('pilot_t.png')"></div>
+        <h3>PILOT</h3>
+        <a href="https://www.zeiglerhondaracine.com/new-inventory/index.htm?search=&gvModel=Pilot" class="btn btn--outline btn--sm">SHOP NOW</a>
+      </article>
+      <article class="model">
+        <div class="model__img" style="background-image:url('accord_t.png')"></div>
+        <h3>ACCORD</h3>
+        <a href="https://www.zeiglerhondaracine.com/new-inventory/index.htm?search=&gvModel=Accord" class="btn btn--outline btn--sm">SHOP NOW</a>
+      </article>
+      <article class="model">
+        <div class="model__img" style="background-image:url('civic_t.png')"></div>
+        <h3>CIVIC</h3>
+        <a href="https://www.zeiglerhondaracine.com/new-inventory/index.htm?search=&gvModel=Civic" class="btn btn--outline btn--sm">SHOP NOW</a>
+      </article>
+      <article class="model">
+        <div class="model__img" style="background-image:url('hr-v_t.png')"></div>
+        <h3>HR-V</h3>
+        <a href="https://www.zeiglerhondaracine.com/new-inventory/index.htm?search=&gvModel=HR-V" class="btn btn--outline btn--sm">SHOP NOW</a>
+      </article>
+    </div>
+    <div class="models__all">
+      <a href="https://www.zeiglerhondaracine.com/new-inventory/index.htm" class="btn btn--blue">VIEW ALL INVENTORY</a>
+    </div>
+  </section>
+
+  <!-- ===== WHY TRUST US ===== -->
+  <section class="trust">
+    <div class="trust__photo" role="img" aria-label="Happy family standing in front of their new Honda"></div>
+    <div class="trust__content">
+      <h2 class="section-title">WHY CUSTOMERS TRUST ZEIGLER HONDA</h2>
+      <div class="trust__features">
+        <div class="tf">
+          <span class="tf__ico"><img src="family.svg" alt=""></span>
+          <h3>FAMILY <span class="blue">OWNED</span></h3>
+          <p>Proudly serving Racine and the surrounding area for years.</p>
+        </div>
+        <div class="tf">
+          <span class="tf__ico"><img src="selection.svg" alt=""></span>
+          <h3>HUGE <span class="blue">SELECTION</span></h3>
+          <p>Hundreds of new Honda models available.</p>
+        </div>
+        <div class="tf">
+          <span class="tf__ico"><img src="pricing.svg" alt=""></span>
+          <h3>TRANSPARENT <span class="blue">PRICING</span></h3>
+          <p>Upfront pricing with no hidden fees or surprises.</p>
+        </div>
+        <div class="tf">
+          <span class="tf__ico"><img src="award.svg" alt=""></span>
+          <h3>AWARD-WINNING <span class="blue">SERVICE</span></h3>
+          <p>Our team is here for you before, during and after your purchase.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DELIVERY AREA ===== -->
+  <section class="area">
+    <div class="area__map" id="deliveryMap" role="img" aria-label="Map showing the 50-mile delivery radius around Zeigler Honda in Sturtevant, WI"></div>
+    <div class="area__content">
+      <h2 class="section-title">DELIVERING TO SOUTHERN WISCONSIN &amp; NORTHERN ILLINOIS</h2>
+      <div class="area__cols">
+        <div class="area__col">
+          <h3>WISCONSIN</h3>
+          <ul>
+            <li>Racine</li><li>Kenosha</li><li>Pleasant Prairie</li>
+            <li>Mount Pleasant</li><li>Oak Creek</li><li>Franklin</li>
+            <li>Milwaukee</li><li>Burlington</li><li>Union Grove</li>
+            <li>Sturtevant &amp; More</li>
+          </ul>
+        </div>
+        <div class="area__col">
+          <h3>ILLINOIS</h3>
+          <ul>
+            <li>Waukegan</li><li>Gurnee</li><li>Libertyville</li>
+            <li>Lindenhurst</li><li>Antioch</li><li>Grayslake</li>
+            <li>Vernon Hills</li><li>Round Lake</li><li>Lake Villa</li>
+            <li>&amp; More</li>
+          </ul>
+        </div>
+        <div class="area__note">
+          <span class="area__note-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path fill="#fff" d="M12 2C8.1 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+          </span>
+          <div>
+            <strong>Within 50 Miles of Our Dealership</strong>
+            <p>Don't see your area? Contact us — we may still be able to assist you!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FINAL CTA / FORM ===== -->
+  <section class="cta" id="schedule">
+    <div class="cta__call">
+      <h2>READY TO EXPERIENCE<br>AT-HOME DELIVERY?</h2>
+      <p>Our team is here to help you every step of the way.</p>
+      <div class="cta__phone">
+        <span class="cta__phone-ico"><img src="6523368.png" alt=""></span>
+        <span>
+          <small>Call Now!</small>
+          <a href="tel:2622609760">262-260-9760</a>
+        </span>
+      </div>
+      <p class="cta__hours">Monday – Saturday: 8:30am – 7:00pm</p>
+    </div>
+    <div class="cta__form">
+      <h3>SCHEDULE YOUR HOME DELIVERY</h3>
+      <form>
+        <div class="row">
+          <input type="text" placeholder="First Name*" required>
+          <input type="text" placeholder="Last Name*" required>
+        </div>
+        <div class="row">
+          <input type="email" placeholder="Email*" required>
+          <input type="tel" placeholder="Phone*" required>
+        </div>
+        <div class="row">
+          <input type="text" placeholder="ZIP Code*" required>
+          <select>
+            <option value="" disabled selected>Vehicle of Interest</option>
+            <option>CR-V</option><option>Pilot</option><option>Accord</option>
+            <option>Civic</option><option>HR-V</option><option>Other</option>
+          </select>
+        </div>
+        <div class="row">
+          <select>
+            <option value="" disabled selected>Preferred Delivery Location</option>
+            <option>Home</option><option>Office</option><option>Other</option>
+          </select>
+          <input type="text" placeholder="Comments">
+        </div>
+        <button type="submit" class="btn btn--blue btn--block">SCHEDULE MY HOME DELIVERY</button>
+      </form>
+    </div>
+    <div class="cta__photo" role="img" aria-label="Zeigler Honda of Racine dealership building"></div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2026 Zeigler Honda of Racine.</p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    (function () {
+      var el = document.getElementById('deliveryMap');
+      if (!el || typeof L === 'undefined') return;
+      // Zeigler Honda — Sturtevant, WI 53177
+      var center = [42.7008, -87.8987];
+      var radiusMeters = 50 * 1609.34; // 50 miles
+      var map = L.map(el, { scrollWheelZoom: false, zoomControl: false, attributionControl: false, dragging: true })
+        .setView(center, 9);
+      L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
+        maxZoom: 18, subdomains: 'abcd'
+      }).addTo(map);
+      var circle = L.circle(center, {
+        radius: radiusMeters,
+        color: '#034ea2', weight: 1.5, opacity: 0.6,
+        fillColor: '#034ea2', fillOpacity: 0.10
+      }).addTo(map);
+      // Key cities within the delivery area
+      var cities = [
+        { name: 'Milwaukee', lat: 43.0389, lng: -87.9065 },
+        { name: 'Racine', lat: 42.7261, lng: -87.7829 },
+        { name: 'Kenosha', lat: 42.5847, lng: -87.8212 },
+        { name: 'Waukegan', lat: 42.3636, lng: -87.8448 }
+      ];
+      cities.forEach(function (c) {
+        L.circleMarker([c.lat, c.lng], {
+          radius: 4, color: '#fff', weight: 1.5,
+          fillColor: '#5a6678', fillOpacity: 1
+        }).addTo(map).bindTooltip(c.name, { permanent: true, direction: 'right', offset: [6, 0], className: 'map-city' });
+      });
+      // Dealership marker (on top)
+      L.circleMarker(center, {
+        radius: 7, color: '#fff', weight: 2,
+        fillColor: '#034ea2', fillOpacity: 1
+      }).addTo(map).bindTooltip('Zeigler Honda', { permanent: true, direction: 'left', offset: [-7, 0], className: 'map-city map-city--dealer' });
+      function fit() { map.invalidateSize(); map.fitBounds(circle.getBounds(), { padding: [12, 12] }); }
+      window.addEventListener('load', function () { setTimeout(fit, 250); });
+      if ('ResizeObserver' in window) { var ro = new ResizeObserver(function () { map.invalidateSize(); }); ro.observe(el); }
+    })();
+  </script>
+  <script>
+    // Open all external links in a separate popup window
+    (function () {
+      document.querySelectorAll('a[href^="http"]').forEach(function (a) {
+        a.setAttribute('target', '_blank');
+        a.setAttribute('rel', 'noopener noreferrer');
+        a.addEventListener('click', function (e) {
+          e.preventDefault();
+          var w = Math.min(1100, screen.availWidth);
+          var h = Math.min(820, screen.availHeight);
+          var left = Math.max(0, (screen.availWidth - w) / 2);
+          var top = Math.max(0, (screen.availHeight - h) / 2);
+          window.open(this.href, 'zeiglerPopup',
+            'width=' + w + ',height=' + h + ',left=' + left + ',top=' + top + ',scrollbars=yes,resizable=yes');
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
