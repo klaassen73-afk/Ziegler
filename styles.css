@@ -277,7 +277,7 @@ img { max-width: 100%; display: block; }
 }
 .cta__form input:focus, .cta__form select:focus { outline: none; border-color: var(--blue); box-shadow: 0 0 0 3px rgba(3,78,162,.14); }
 .cta__form .btn { margin-top: 6px; }
-.cta__photo { min-height: 300px; background: url("hondafront.webp") center/cover no-repeat; }
+.cta__photo { min-height: 300px; background: url("zeigler-ext.jpg") 80% 30%/cover no-repeat; }
 
 /* ===== FOOTER ===== */
 .footer { background: var(--navy); color: #aeb9cb; text-align: center; padding: 22px; font-size: .92rem; }
