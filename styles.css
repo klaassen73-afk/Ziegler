@@ -65,7 +65,7 @@ img { max-width: 100%; display: block; }
 /* ===== Section title ===== */
 .section-title {
   text-align: center; color: var(--blue);
-  font-size: clamp(1.8rem, 3.2vw, 2.6rem); font-weight: 800;
+  font-size: clamp(2.3rem, 4.2vw, 3.5rem); font-weight: 800;
   letter-spacing: .035em; margin-bottom: 44px; text-transform: none;
 }
 
