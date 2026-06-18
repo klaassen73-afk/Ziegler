@@ -248,6 +248,7 @@ img { max-width: 100%; display: block; }
 }
 .leaflet-tooltip.map-city::before { display: none; }
 .leaflet-tooltip.map-city--dealer { color: var(--navy); font-size: .82rem; }
+.leaflet-tooltip.map-edge { color: var(--blue); font-weight: 700; }
 .leaflet-control-attribution { background: rgba(255,255,255,.6) !important; font-size: 9px; color: #9aa3af; padding: 1px 5px; }
 .leaflet-control-attribution a { color: #8a93a3; }
 

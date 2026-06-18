@@ -336,6 +336,18 @@
           fillColor: '#5a6678', fillOpacity: 1
         }).addTo(map).bindTooltip(c.name, { permanent: true, direction: 'right', offset: [6, 0], className: 'map-city' });
       });
+      // Furthest-reach towns at the edge of the 50-mile ring (N / W / S — Lake Michigan blocks the east)
+      var edges = [
+        { name: 'Port Washington', lat: 43.3875, lng: -87.8753, dir: 'top',    off: [0, -6] },
+        { name: 'Fort Atkinson',   lat: 42.9281, lng: -88.8390, dir: 'left',   off: [-6, 0] },
+        { name: 'Evanston',        lat: 42.0451, lng: -87.6877, dir: 'bottom', off: [0, 6]  }
+      ];
+      edges.forEach(function (c) {
+        L.circleMarker([c.lat, c.lng], {
+          radius: 4, color: '#fff', weight: 1.5,
+          fillColor: '#034ea2', fillOpacity: 1
+        }).addTo(map).bindTooltip(c.name, { permanent: true, direction: c.dir, offset: c.off, className: 'map-city map-edge' });
+      });
       // Dealership marker (on top)
       L.circleMarker(center, {
         radius: 7, color: '#fff', weight: 2,
